@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EmployeeController!{% endblock %}
+
+{% block body %}
+    <table>
+        <tr>
+            <th>Id</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        {% for employee in employees %}
+            <tr>
+                <td>{{ employee.id }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
